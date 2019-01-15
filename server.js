@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const MarsMissions = require('./models/marsMissions');
-
+app.use(express.static(__dirname + '/public'));
 // * Make it so you can click on a mission’s name on the index page, and be taken to that mission’s show page
 // * Bonus: add images to the data and have them display
 // * Bonus: add static css to style the pages
